@@ -1,3 +1,4 @@
 iadvize_blog_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: IadvizeBlogBundle:Default:index }
+    path:     /api/posts
+    defaults: { _controller: IadvizeBlogBundle:Api:showPosts }
+

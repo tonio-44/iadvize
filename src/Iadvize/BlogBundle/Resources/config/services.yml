@@ -1,4 +1,9 @@
+parameters:
+    VDM.host: 'viedemerde.fr'
+    VDM.limit: 200;
+
 services:
-#    iadvize_blog.example:
-#        class: Iadvize\BlogBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]
+    iadvize_site_crawler:
+        class: Iadvize\BlogBundle\Component\VdmSitecrawler
+        #@service_id, "plain_value",#
+        arguments: [%VDM.host%, %VDM.limit%, @doctrine.orm.entity_manager]
