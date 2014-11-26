@@ -1,0 +1,4 @@
+iadvize_blog:
+    resource: "@IadvizeBlogBundle/Resources/config/routing.yml"
+    prefix:   /
+
