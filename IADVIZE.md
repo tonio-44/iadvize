@@ -54,18 +54,18 @@ Répondre aux questions posées par le script d'installation :
 Installer l'application
 --------------------------
 1. Avant d'exécuter Symfony2, utilisez la commande ci-dessous pour vérifier si votre système remplit tous les prérequis.
-		`$ php ./app/check.php`
+    $ php ./app/check.php
 		
 2. Accéder au site :
-		**`http://iadvize.ltd/config.php`**
+    `http://iadvize.ltd/config.php`
 et modifier la configuration si besoin
 
 3. Créer la base de données avec la console de Symfony2
- `$ php ./app/console doctrine:database:create`
-  `Created database for connection named `symfony_ltd`
+    `$ php ./app/console doctrine:database:create`
+    Created database for connection named `symfony_ltd
 4. Créer la table des posts VDM
-`$ php ./app/console doctrine:schema:update --force`
-`Database schema updated successfully! "1" queries were executed`
+    `$ php ./app/console doctrine:schema:update --force`
+    `Database schema updated successfully! "1" queries were executed`
 
 Lecture des Posts sur le site VDM
 ----------------------------------------
@@ -81,12 +81,12 @@ Accéder à l'API
 ---------------
 Accéder à l'API et effectuer quelques requêtes
 
-   `http://iadvize.ltd/app_dev.php/api/posts`
-   ` http://iadvize.ltd/app_dev.php/api/posts?author=Anonyme`
-    `http://iadvize.ltd/app_dev.php/api/posts?from=2014-11-20&to=2014-11-28`
+    http://iadvize.ltd/app_dev.php/api/posts
+    http://iadvize.ltd/app_dev.php/api/posts?author=Anonyme
+    http://iadvize.ltd/app_dev.php/api/posts?from=2014-11-20&to=2014-11-28
     
  Tests unitaires
 -----------
 Lancer les tests unitaires 
 
-   `$ phpunit -c app/`
+    $ phpunit -c app/
