@@ -1,6 +1,6 @@
 parameters:
     VDM.host: 'viedemerde.fr'
-    VDM.limit: 200;
+    VDM.limit: 40;
 
 services:
     iadvize_site_crawler:
