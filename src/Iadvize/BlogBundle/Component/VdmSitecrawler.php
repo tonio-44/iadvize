@@ -117,6 +117,8 @@ class VdmSitecrawler {
   */
 	public function extractVdmPost($html_post){
 		
+		$author = '';
+		
 		$html_post_crawler = new Crawler($html_post);
 
 		$id = $html_post_crawler -> attr('id');//Id du post

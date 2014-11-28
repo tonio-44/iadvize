@@ -1,4 +1,15 @@
 iadvize_blog_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: IadvizeBlogBundle:Default:index }
+iadvize_blog_api_posts:
     path:     /api/posts
     defaults: { _controller: IadvizeBlogBundle:Api:showPosts }
+    requirements:
+        _method: POST|GET
+iadvize_blog_api_post:
+    path:     /api/posts/{id}
+    defaults: { _controller: IadvizeBlogBundle:Api:show }
+    requirements:
+        _method: POST|GET
+
 
